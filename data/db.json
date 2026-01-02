@@ -1,0 +1,275 @@
+{
+  "products": [
+    {
+      "id": 10001,
+      "name": "React Projects (Second Edition)",
+      "overview": "Build advanced cross-platform projects with React and React Native to become a proficient developer.",
+      "long_description": "Developed by Facebook, React is a popular library for building impressive user interfaces. React extends its capabilities to mobile platforms using the React Native framework and integrates with popular web and mobile tools to build scalable applications.\nReact Projects is your guide to learning React development by using modern development patterns and integrating React with powerful web tools, such as GraphQL, Expo, and React 360. You'll start building a real-world project right from the first chapter and get hands-on with developing scalable applications as you advance to building more complex projects. Throughout the book, you'll use the latest versions of React and React Native to explore features such as routing, Context, and Hooks on multiple platforms, which will help you build full-stack web and mobile applications efficiently. Finally, you'll get to grips with unit testing with Jest and end-to-end testing with Cypress to build test-driven apps.\nBy the end of this React book, you'll have developed the skills necessary to start building scalable React apps across web and mobile platforms.",
+      "price": 29,
+      "poster": "/assets/images/react-book-3.avif",
+      "image_local": "/assets/images/react-book-3.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 5,
+      "best_seller": true
+    },
+    {
+      "id": 10002,
+      "name": "REACT IN PATTERNS",
+      "overview": "A book about common design patterns used while developing with React. It includes techniques for composition, data flow, dependency management and more.",
+      "long_description": "React in Patterns is a comprehensive guide to building scalable and maintainable user interfaces with React. Authored by Krasimir Tsonev, this book explores common design patterns and advanced technique",
+      "price": 19,
+      "poster": "/assets/images/react-book-2.avif",
+      "image_local": "/assets/images/react-book-2.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 2,
+      "best_seller": false
+    },
+    {
+      "id": 10003,
+      "name": "Advance Javascript",
+      "overview": "Advanced JavaScript is a hands-on guide that takes you through JavaScript and its many features, one step at a time. You'll begin by learning how to use the new JavaScript syntax in ES6, and then work through the many other features that modern JavaScript has to offer.",
+      "long_description": "If you are looking for a programming language to develop flexible and efficient applications, JavaScript is an obvious choice. Advanced JavaScript is a hands-on guide that takes you through JavaScript and its many features, one step at a time. You'll begin by learning how to use the new JavaScript syntax in ES6, and then work through the many other features that modern JavaScript has to offer. As you progress through the chapters, you’ll use asynchronous programming with callbacks and promises, handle browser events, and perform Document Object Model (DOM) manipulation. You'll also explore various methods of testing JavaScript projects. In the concluding chapters, you'll discover functional programming and learn to use it to build your apps. With this book as your guide, you'll also be able to develop APIs using Node.js and Express, create front-ends using React/Redux, and build mobile apps using React/Expo.By the end of Advanced JavaScript, you will have explored the features and benefits of JavaScript to build small applications.",
+      "price": 29,
+      "poster": "/assets/images/js-book-1.avif",
+      "image_local": "/assets/images/js-book-1.avif",
+      "rating": 3,
+      "in_stock": true,
+      "size": 1,
+      "best_seller": false
+    },
+    {
+      "id": 10004,
+      "name": "Advance Javascript Visualized",
+      "overview": "Anyone who is truly passionate about web or javascript will always love to learn under the hood working javascript and nodejs architecture. This book will give you a strong foundation of advanced javascript concepts and explains the topics with plain English and visualization. ",
+      "long_description": "Nowadays Javascript became an essential programming language that no one ignores or avoids. There are thousands of ways of learning javascript but a proper mental model for the core javascript concept is the most important part. So, anyone who is truly passionate about web or javascript will always love to learn under the hood working javascript and nodejs architecture. This book will give you a strong foundation of advanced javascript concepts and explains the topics with plain English and visualization. Here are the content and topics that we will learn and visualize.\n\n- Execution Context, Thread, and Callstack\n- Closure - A Deep Dive\n- ProtoType , __proto__ and Objects\n- Asynchronous Execution\n- Iterators, Generators, and Async-Await\n- NodeJS, C++, Queues, and Servers\n- Bonus",
+      "price": 99,
+      "poster": "/assets/images/js-book-2.avif",
+      "image_local": "/assets/images/js-book-2.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 7,
+      "best_seller": true
+    },
+    {
+      "id": 10005,
+      "name": "Mastering Javascript Design Patterns (Second Edition)",
+      "overview": "Learn how to use tried and true software design methodologies to enhance your JavaScript code Discover robust JavaScript implementations of classic and advanced design patterns",
+      "long_description": "Write reliable code to create powerful applications by mastering advanced JavaScript design patterns . Learn how to use tried and true software design methodologies to enhance your JavaScript code Discover robust JavaScript implementations of classic and advanced design patterns Packed with easy-to-follow examples that can be used to create reusable code and extensible designs Who This Book Is For This book is ideal for JavaScript developers who want to gain expertise in object-oriented programming with JavaScript and the new capabilities of ES-2015 to improve their web development skills and build professional-quality web applications. What You Will Learn Harness the power of patterns for tasks ranging from application building to code testing Rethink and revitalize your code with the use of functional patterns Improve the way you organize your code Build large-scale apps seamlessly with the help of reactive patterns Identify the best use cases for microservices Get to grips with creational, behavioral, and structural design patterns Explore advanced design patterns including dependency injection In Detail With the recent release of ES-2015, there are several new object-oriented features and functions introduced in JavaScript. These new features enhance the capabilities of JavaScript to utilize design patterns and software design methodologies to write powerful code. Through this book, you will explore how design patterns can help you improve and organize your JavaScript code. You'll get to grips with creational, structural and behavioral patterns as you discover how to put them to work in different scenarios. Then, you'll get a deeper look at patterns used in functional programming, as well as model view patterns and patterns to build web applications. This updated edition will also delve into reactive design patterns and microservices as they are a growing phenomenon in the world of web development. You will also find patterns to improve the testability of your code using mock objects, mocking frameworks, and monkey patching. We'll also show you some advanced patterns including dependency injection and live post processing. By the end of the book, you'll be saved of a lot of trial and error and developmental headaches, and you will be on the road to becoming a JavaScript expert. Style and approach Packed with several real-world use cases, this book shows you through step-by-step instructions how to implement the advanced object-oriented programming features to build sophisticated web applications that promote scalability and reusability.",
+      "price": 19,
+      "poster": "/assets/images/js-book-3.avif",
+      "image_local": "/assets/images/js-book-3.avif",
+      "rating": 3,
+      "in_stock": true,
+      "size": 3,
+      "best_seller": false
+    },
+    {
+      "id": 10006,
+      "name": "120 Advance Javascript Interview Questions",
+      "overview": "This book offers a structured approach to mastering JavaScript interview questions, organized into five tiers, ranging from fundamental concepts to advanced challenges. ",
+      "long_description": "This book offers a structured approach to mastering JavaScript interview questions, organized into five tiers, ranging from fundamental concepts to advanced challenges. By working through these questions, you'll gain the confidence and knowledge needed to excel in technical interviews.Uncover the intricacies of this versatile language and harness its power to create innovative web applications.Whether you're a developer looking to enhance your skills or a job seeker preparing for technical interviews.",
+      "price": 99,
+      "poster": "/assets/images/js-book-4.avif",
+      "image_local": "/assets/images/js-book-4.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 10,
+      "best_seller": false
+    },
+    {
+      "id": 10007,
+      "name": "Javascript Programming - PUSHING THE LIMITS",
+      "overview": "This book delivers a compelling tutorial, showing you how to build a real-world app from the ground up. Experienced developers who want to master the latest techniques and redefine their skills will find this deep dive into JavaScript's hidden functionalities",
+      "long_description": "JavaScript has grown up, and it's a hot topic. Newer and faster JavaScript VMs and frameworks built upon them have increased the popularity of JavaScript for server-side web applications, and rich JS applications are being developed for mobile devices. This book delivers a compelling tutorial, showing you how to build a real-world app from the ground up. Experienced developers who want to master the latest techniques and redefine their skills will find this deep dive into JavaScript's hidden functionalities gives them the tools to create truly amazing and complex applications.",
+      "price": 19,
+      "poster": "/assets/images/js-book-5.avif",
+      "image_local": "/assets/images/js-book-5.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 2,
+      "best_seller": false
+    },
+    {
+      "id": 10008,
+      "name": "Hands-On Javascript High Performance",
+      "overview": "High-performance web development is all about cutting through the complexities in different layers of a web app and building services and APIs that improve the speed and performance of your apps on the browser. With emerging web technologies, building scalable websites and sustainable web apps is smoother than ever.",
+      "long_description": "High-performance web development is all about cutting through the complexities in different layers of a web app and building services and APIs that improve the speed and performance of your apps on the browser. With emerging web technologies, building scalable websites and sustainable web apps is smoother than ever.This book starts by taking you through the web frontend, popular web development practices, and the latest version of ES and JavaScript. You'll work with Node.js and learn how to build web apps without a framework. The book consists of three hands-on examples that help you understand JavaScript applications at both the server-side and the client-side using Node.js and Svelte.js. Each chapter covers modern techniques such as DOM manipulation and V8 engine optimization to strengthen your understanding of the web. Finally, you’ll delve into advanced topics such as CI/CD and how you can harness their capabilities to speed up your web development dramatically.",
+      "price": 29,
+      "poster": "/assets/images/perf-book-1.avif",
+      "image_local": "/assets/images/perf-book-1.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 3,
+      "best_seller": true
+    },
+    {
+      "id": 10009,
+      "name": "Web Performance Fundamentals",
+      "overview": "Get the practical tools and techniques you need to make your React apps faster, smoother, and more efficient.",
+      "long_description": "Get the practical tools and techniques you need to make your React apps faster, smoother, and more efficient.",
+      "price": 29,
+      "poster": "/assets/images/perf-book-2.avif",
+      "image_local": "/assets/images/perf-book-2.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 3,
+      "best_seller": false
+    },
+    {
+      "id": 10010,
+      "name": "Full Stack React Projects",
+      "overview": "A practical, project-based guide to full-stack JavaScript web development combining the power of React with industry-tested server-side technologies. Build your career as a full-stack developer with this practical guide.",
+      "long_description": "A practical, project-based guide to full-stack JavaScript web development combining the power of React with industry-tested server-side technologies. Build your career as a full-stack developer with this practical guide. Understand how the different aspects of a MERN application come together through a series of practical projects Master the MERN stack by building robust social media, E-commerce store, and web-based VR game apps Book Description Facebook's React combined with industry-tested, server-side technologies, such as Node, Express, and MongoDB, enables you to develop and deploy robust real-world full-stack web apps. This updated second edition focuses on the latest versions and conventions of the technologies in this stack, along with their new features such as Hooks in React and async/await in JavaScript. The book also explores advanced topics such as implementing real-time bidding, a web-based classroom app, and data visualization in an expense tracking app. Full-Stack React Projects will take you through the process of preparing the development environment for MERN stack-based web development, creating a basic skeleton app, and extending it to build six different web apps. You'll build apps for social media, classrooms, media streaming, online marketplaces with real-time bidding, and web-based games with virtual reality features.",
+      "price": 19,
+      "poster": "/assets/images/react-book-1.avif",
+      "image_local": "/assets/images/react-book-1.avif",
+      "rating": 4,
+      "in_stock": true,
+      "size": 1,
+      "best_seller": false
+    },
+    {
+      "id": 10011,
+      "name": "Essential Javascript for React",
+      "overview": "If you’ve picked up this eBook, you're likely standing at the threshold of one of the most exciting and creative fields in the digital age: web development. ",
+      "long_description": "If you’ve picked up this eBook, you're likely standing at the threshold of one of the most exciting and creative fields in the digital age: web development. Maybe you've dabbled a bit in HTML and CSS and are now looking to get your feet wet in the ocean of JavaScript. Or perhaps you've decided to jump straight into the deep end. Either way, this guide is designed to be your companion on this thrilling journey. And what makes this journey even more promising is that by the end, you’ll be ready to dive into the ever-popular library—React.",
+      "price": 29,
+      "poster": "/assets/images/react-book-4.avif",
+      "image_local": "/assets/images/react-book-4.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 3,
+      "best_seller": true
+    },
+    {
+      "id": 10012,
+      "name": "Advance React",
+      "overview": "Take your React knowledge to the next level with advanced concepts, strategies, techniques, patterns and in-depth investigations.",
+      "long_description": "Take your React knowledge to the next level with advanced concepts, strategies, techniques, patterns and in-depth investigations.",
+      "price": 9,
+      "poster": "/assets/images/react-book-5.avif",
+      "image_local": "/assets/images/react-book-5.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 1,
+      "best_seller": false
+    },
+    {
+      "id": 10013,
+      "name": "Ultimate Tailwind CSS Handbook",
+      "overview": "This Book is the ultimate guide for both beginners and experienced front-end developers, providing a comprehensive path into the world of responsive website development with Tailwind CSS. Whether you're a beginner embarking on academic or hobby projects or an experienced developer craving the flexibility of TailwindCSS, this book is tailor-made for you.",
+      "long_description": "This Book is the ultimate guide for both beginners and experienced front-end developers, providing a comprehensive path into the world of responsive website development with Tailwind CSS. Whether you're a beginner embarking on academic or hobby projects or an experienced developer craving the flexibility of TailwindCSS, this book is tailor-made for you. This groundbreaking book begins by demystifying the fundamentals of HTML and CSS, making them accessible even to those who are new to these frameworks. With a solid grasp of these essentials, you'll dive headfirst into the core concepts, absorbing invaluable insights throughout the book. The interconnected concepts of TailwindCSS will become clear as day, empowering you to create stunning websites with ease. You will unleash the simplicity and adaptability of TailwindCSS as you explore its intuitive usability and endless customization options. This Book is your golden ticket to effortlessly mastering modern web development.",
+      "price": 19,
+      "poster": "/assets/images/css-book-1.avif",
+      "image_local": "/assets/images/css-book-1.avif",
+      "rating": 4,
+      "in_stock": false,
+      "size": 3,
+      "best_seller": false
+    },
+    {
+      "id": 10014,
+      "name": "Advance Web Application Architecture",
+      "overview": "This Book by Matthias Noback is not a typical book about software architecture. This book doesn't say 'Do this!' or 'Don't do that'. Instead, it tells you a story about refactoring a legacy code to make it a stable and testable application.",
+      "long_description": "This Book by Matthias Noback is not a typical book about software architecture. This book doesn't say 'Do this!' or 'Don't do that'. Instead, it tells you a story about refactoring a legacy code to make it a stable and testable application.",
+      "price": 19,
+      "poster": "/assets/images/web-arch-1.avif",
+      "image_local": "/assets/images/web-arch-1.avif",
+      "rating": 4,
+      "in_stock": false,
+      "size": 3,
+      "best_seller": false
+    },
+    {
+      "id": 10015,
+      "name": "Attacking and Exploiting Modern Web Applications",
+      "overview": "This book equips you with the techniques and tools needed to perform web application penetration testing effectively. You will gain hands-on experience identifying vulnerabilities like SQL Injection, XSS, RCE, and more, while exploring frameworks and tools used by security professionals and hackers.",
+      "long_description": "If you are a penetration tester, red team member, or security analyst looking to improve your ability to identify and exploit vulnerabilities, this book is for you. Developers aiming to understand security risks inherent in their applications or DevOps professionals securing their environments will find value here too. It also appeals to CISOs and security managers seeking insights into threats and risk mitigation.",
+      "price": 9,
+      "poster": "/assets/images/web-arch-2.avif",
+      "image_local": "/assets/images/web-arch-2.avif",
+      "rating": 2,
+      "in_stock": false,
+      "size": 1,
+      "best_seller": false
+    }
+  ],
+  "featured_products": [
+    {
+      "id": 10004,
+      "name": "Advance Javascript Visualized",
+      "overview": "Anyone who is truly passionate about web or javascript will always love to learn under the hood working javascript and nodejs architecture. This book will give you a strong foundation of advanced javascript concepts and explains the topics with plain English and visualization. ",
+      "long_description": "Nowadays Javascript became an essential programming language that no one ignores or avoids. There are thousands of ways of learning javascript but a proper mental model for the core javascript concept is the most important part. So, anyone who is truly passionate about web or javascript will always love to learn under the hood working javascript and nodejs architecture. This book will give you a strong foundation of advanced javascript concepts and explains the topics with plain English and visualization. Here are the content and topics that we will learn and visualize.\n\n- Execution Context, Thread, and Callstack\n- Closure - A Deep Dive\n- ProtoType , __proto__ and Objects\n- Asynchronous Execution\n- Iterators, Generators, and Async-Await\n- NodeJS, C++, Queues, and Servers\n- Bonus",
+      "price": 99,
+      "poster": "/assets/images/js-book-2.avif",
+      "image_local": "/assets/images/js-book-2.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 7,
+      "best_seller": true
+    },
+    {
+      "id": 10006,
+      "name": "120 Advance Javascript Interview Questions",
+      "overview": "This book offers a structured approach to mastering JavaScript interview questions, organized into five tiers, ranging from fundamental concepts to advanced challenges. ",
+      "long_description": "This book offers a structured approach to mastering JavaScript interview questions, organized into five tiers, ranging from fundamental concepts to advanced challenges. By working through these questions, you'll gain the confidence and knowledge needed to excel in technical interviews.Uncover the intricacies of this versatile language and harness its power to create innovative web applications.Whether you're a developer looking to enhance your skills or a job seeker preparing for technical interviews.",
+      "price": 99,
+      "poster": "/assets/images/js-book-4.avif",
+      "image_local": "/assets/images/js-book-4.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 10,
+      "best_seller": false
+    },
+    {
+      "id": 10008,
+      "name": "Hands-On Javascript High Performance",
+      "overview": "High-performance web development is all about cutting through the complexities in different layers of a web app and building services and APIs that improve the speed and performance of your apps on the browser. With emerging web technologies, building scalable websites and sustainable web apps is smoother than ever.",
+      "long_description": "High-performance web development is all about cutting through the complexities in different layers of a web app and building services and APIs that improve the speed and performance of your apps on the browser. With emerging web technologies, building scalable websites and sustainable web apps is smoother than ever.This book starts by taking you through the web frontend, popular web development practices, and the latest version of ES and JavaScript. You'll work with Node.js and learn how to build web apps without a framework. The book consists of three hands-on examples that help you understand JavaScript applications at both the server-side and the client-side using Node.js and Svelte.js. Each chapter covers modern techniques such as DOM manipulation and V8 engine optimization to strengthen your understanding of the web. Finally, you’ll delve into advanced topics such as CI/CD and how you can harness their capabilities to speed up your web development dramatically.",
+      "price": 29,
+      "poster": "/assets/images/perf-book-1.avif",
+      "image_local": "/assets/images/perf-book-1.avif",
+      "rating": 5,
+      "in_stock": true,
+      "size": 3,
+      "best_seller": true
+    }
+  ],
+  "orders": [
+    {
+      "cartList": [
+        {
+          "id": 10001,
+          "name": "React Projects (Second Edition)",
+          "overview": "Build advanced cross-platform projects with React and React Native to become a proficient developer.",
+          "long_description": "Developed by Facebook, React is a popular library for building impressive user interfaces. React extends its capabilities to mobile platforms using the React Native framework and integrates with popular web and mobile tools to build scalable applications.\nReact Projects is your guide to learning React development by using modern development patterns and integrating React with powerful web tools, such as GraphQL, Expo, and React 360. You'll start building a real-world project right from the first chapter and get hands-on with developing scalable applications as you advance to building more complex projects. Throughout the book, you'll use the latest versions of React and React Native to explore features such as routing, Context, and Hooks on multiple platforms, which will help you build full-stack web and mobile applications efficiently. Finally, you'll get to grips with unit testing with Jest and end-to-end testing with Cypress to build test-driven apps.\nBy the end of this React book, you'll have developed the skills necessary to start building scalable React apps across web and mobile platforms.",
+          "price": 29,
+          "poster": "/assets/images/react-book-3.avif",
+          "image_local": "/assets/images/react-book-3.avif",
+          "rating": 5,
+          "in_stock": true,
+          "size": 5,
+          "best_seller": true
+        }
+      ],
+      "amount_paid": 29,
+      "quantity": 1,
+      "user": {
+        "name": "Arpita codebook",
+        "email": "arpita.biswal@example.com",
+        "id": 1
+      },
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "arpita.biswal@example.com",
+      "password": "$2a$10$oRuf5TV6DScmeBF.XH/bs.CGO1OF/O8uixqT61z/LnvkactswQ2a.",
+      "name": "Arpita codebook",
+      "id": 1
+    }
+  ]
+}
