@@ -1,49 +1,81 @@
 import { useEffect, useState } from "react";
 import AllRoutes from "./routes/AllRoutes";
 import { Header, Footer } from "./components";
+import { getUser } from "./services";
 
 function App() {
-  const [isWakingUp, setIsWakingUp] = useState(true);
+  const [backendReady, setBackendReady] = useState(false);
+  const [imagesReady, setImagesReady] = useState(false);
   const [progress, setProgress] = useState(10);
 
+  const isAppReady = backendReady && imagesReady;
+
   useEffect(() => {
-    // Fake progress animation
+    // Simulated progress
     const progressInterval = setInterval(() => {
-      setProgress((prev) => (prev < 90 ? prev + 10 : prev));
-    }, 400);
+      setProgress((p) => (p < 90 ? p + 5 : p));
+    }, 300);
 
-    const wakeUpServer = async () => {
+    const wakeBackend = async () => {
       try {
-        await fetch("https://your-app-name.onrender.com/users");
-      } catch (err) {
-        console.error(err);
+        await getUser();
+      } catch (e) {
+        console.error(e);
       } finally {
-        clearInterval(progressInterval);
-        setProgress(100);
-
-        setTimeout(() => {
-          setIsWakingUp(false);
-        }, 300);
+        setBackendReady(true);
       }
     };
 
-    wakeUpServer();
+    wakeBackend();
 
     return () => clearInterval(progressInterval);
   }, []);
 
+  useEffect(() => {
+    // Wait for all images to load
+    const images = document.images;
+    let loaded = 0;
+
+    if (images.length === 0) {
+      setImagesReady(true);
+      return;
+    }
+
+    const checkDone = () => {
+      loaded++;
+      if (loaded === images.length) {
+        setImagesReady(true);
+      }
+    };
+
+    Array.from(images).forEach((img) => {
+      if (img.complete) {
+        checkDone();
+      } else {
+        img.addEventListener("load", checkDone);
+        img.addEventListener("error", checkDone);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    if (isAppReady) {
+      setProgress(100);
+    }
+  }, [isAppReady]);
+
   return (
     <div className="App dark:bg-darkbg relative">
       {/* Overlay Modal */}
-      {isWakingUp && (
+      {!isAppReady && (
         <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center">
           <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 w-[90%] max-w-md">
             <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">
-              Starting backend services
+              Preparing application
             </h2>
 
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-              Waking up demo server… This may take a few seconds.
+              {backendReady ? "Loading assets…" : "Starting backend services…"}
             </p>
 
             {/* Progress Bar */}
@@ -59,7 +91,6 @@ function App() {
         </div>
       )}
 
-      {/* App Content */}
       <Header />
       <AllRoutes />
       <Footer />
