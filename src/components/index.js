@@ -6,3 +6,5 @@ export { ProductCard } from "./Elements/ProductCard";
 export { Search } from "./Sections/Search";
 export { ScrollToTop } from "./Others/ScrollToTop";
 export { Rating } from "./Elements/Rating";
+export {AppLoader} from "./Others/AppLoader";
+export {ImageWithLoader} from "./Others/ImageWithLoader";
