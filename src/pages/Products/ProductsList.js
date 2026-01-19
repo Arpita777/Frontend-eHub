@@ -6,6 +6,7 @@ import { ProductCard } from "../../components";
 import { FilterBar } from "./components/FilterBar";
 import { getProductList } from "../../services";
 import { toast } from "react-toastify";
+import { ProductCardSkeleton } from "../../components";
 
 export const ProductsList = () => {
   const {
@@ -19,18 +20,19 @@ export const ProductsList = () => {
   const [showFilters, setShowFilters] = useState(false);
   const searchQuery = useLocation().search;
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(true);
   const searchTerm = new URLSearchParams(searchQuery).get("q");
   useTitle("Explore eBooks Collection");
 
   useEffect(() => {
     async function fetchProducts() {
       try {
+        setIsLoading(true);
+  
         let url = `${process.env.REACT_APP_HOST}/444/products`;
-
         const params = new URLSearchParams();
-
+  
         if (searchTerm) params.append("name_like", searchTerm);
-
         if (sortByValue === "LOW_TO_HIGH") {
           params.append("_sort", "price");
           params.append("_order", "asc");
@@ -39,27 +41,64 @@ export const ProductsList = () => {
           params.append("_sort", "price");
           params.append("_order", "desc");
         }
-
         if (rating) params.append("rating_gte", rating);
-
         if (bestSellerOnly) params.append("best_seller", true);
-
         if (inStockOnly) params.append("in_stock", true);
-
+  
         const finalUrl = `${url}?${params.toString()}`;
         navigate(`?${params.toString()}`, { replace: true });
+  
         const data = await getProductList(finalUrl);
         setProductList(data);
       } catch (error) {
-        toast.error(error.message, {
-          closeButton: true,
-          position: "bottom-center",
-        });
+        toast.error(error.message);
+      } finally {
+        setIsLoading(false);
       }
     }
-
+  
     fetchProducts();
   }, [searchTerm, sortByValue, rating, bestSellerOnly, inStockOnly]); //eslint-disable-line react-hooks/exhaustive-deps
+  
+
+  // useEffect(() => {
+  //   async function fetchProducts() {
+  //     try {
+  //       let url = `${process.env.REACT_APP_HOST}/444/products`;
+
+  //       const params = new URLSearchParams();
+
+  //       if (searchTerm) params.append("name_like", searchTerm);
+
+  //       if (sortByValue === "LOW_TO_HIGH") {
+  //         params.append("_sort", "price");
+  //         params.append("_order", "asc");
+  //       }
+  //       if (sortByValue === "HIGH_TO_LOW") {
+  //         params.append("_sort", "price");
+  //         params.append("_order", "desc");
+  //       }
+
+  //       if (rating) params.append("rating_gte", rating);
+
+  //       if (bestSellerOnly) params.append("best_seller", true);
+
+  //       if (inStockOnly) params.append("in_stock", true);
+
+  //       const finalUrl = `${url}?${params.toString()}`;
+  //       navigate(`?${params.toString()}`, { replace: true });
+  //       const data = await getProductList(finalUrl);
+  //       setProductList(data);
+  //     } catch (error) {
+  //       toast.error(error.message, {
+  //         closeButton: true,
+  //         position: "bottom-center",
+  //       });
+  //     }
+  //   }
+
+  //   fetchProducts();
+  // }, [searchTerm, sortByValue, rating, bestSellerOnly, inStockOnly]); //eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <main>
@@ -89,11 +128,22 @@ export const ProductsList = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+         {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {productList.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-        </div>
+        </div>  */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {isLoading
+    ? Array.from({ length: 6 }).map((_, i) => (
+        <ProductCardSkeleton key={i} />
+      ))
+    : productList.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+</div>
+
+        
       </section>
       {showFilters && <FilterBar setShowFilters={setShowFilters} />}
     </main>

@@ -54,7 +54,7 @@ export const ProductDetail = () => {
                 alt={product.name}
                 className="h-full w-full object-contain rounded"
               /> */}
-              <ImageWithLoader src={product.poster} alt={product.name} />
+              <ImageWithLoader src={product.poster} alt={product.name} className="h-full w-full object-contain rounded"/>
             </div>
           </div>
 

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Rating } from "./Rating";
 import { useCart } from "../../context";
-import { ImageWithLoader } from "../Others/ImageWithLoader";
 
 export const ProductCard = ({ product }) => {
   const { id, name, overview, price, rating, poster, best_seller } = product;
@@ -30,7 +29,8 @@ export const ProductCard = ({ product }) => {
           </span>
         )}
         {/* <img className="w-full h-full object-cover" src={poster} alt={name} /> */}
-        <ImageWithLoader src={poster} alt={name} />
+        <img src={poster} alt={name} loading="lazy" className="w-full h-48 object-cover rounded" />
+
       </Link>
       <div className="p-5 flex flex-col flex-1">
         <Link to={`/products/${id}`}>
