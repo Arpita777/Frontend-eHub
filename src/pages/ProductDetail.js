@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useTitle } from "../hooks/useTitle";
 import { useCart } from "../context";
-import { Rating, ImageWithLoader } from "../components";
+import { Rating } from "../components";
 import { getProduct } from "../services";
 import { toast } from "react-toastify";
 
@@ -49,12 +49,11 @@ export const ProductDetail = () => {
         <div className="flex flex-wrap justify-around">
           <div className="max-w-xl my-3 w-full">
             <div className="w-full h-[420px] flex items-center justify-center overflow-hidden">
-              {/* <img
+               <img
                 src={product.poster}
                 alt={product.name}
                 className="h-full w-full object-contain rounded"
-              /> */}
-              <ImageWithLoader src={product.poster} alt={product.name} className="h-full w-full object-contain rounded"/>
+              /> 
             </div>
           </div>
 

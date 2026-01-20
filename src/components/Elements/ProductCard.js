@@ -28,7 +28,6 @@ export const ProductCard = ({ product }) => {
             Best Seller
           </span>
         )}
-        {/* <img className="w-full h-full object-cover" src={poster} alt={name} /> */}
         <img src={poster} alt={name} loading="lazy" className="w-full h-full object-cover rounded" />
 
       </Link>
