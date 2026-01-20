@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "/assets/images/mylogo.png";
 import { Search } from "../Sections/Search";
 import { DropdownLoggedOut } from "../Elements/DropdownLoggedOut";
 import { DropdownLoggedIn } from "../Elements/DropdownLoggedIn";
@@ -29,7 +28,7 @@ export const Header = () => {
       <nav className="bg-white dark:bg-gray-900">
         <div className="border-b border-slate-200 dark:border-b-0 flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-3">
           <Link to="/" className="flex items-center">
-            <img src={Logo} className="mr-3 h-10" alt="Frontend eHub Logo" />
+            <img src={"/assets/images/mylogo.png"} className="mr-3 h-10" alt="Frontend eHub Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Frontend eHub
             </span>

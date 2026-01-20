@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useTitle } from "../hooks/useTitle";
-import Logo from "/assets/images/mylogo.png";
 
 export const PageNotFound = () => {
   useTitle("Page Not Found");
@@ -13,7 +12,7 @@ export const PageNotFound = () => {
             404, Oops!
           </p>
           <div className="max-w-xs">
-            <img className="" src={Logo} alt="Frontend eHub Page Not Found" />
+            <img className="" src={"/assets/images/mylogo.png"} alt="Frontend eHub Page Not Found" />
           </div>
         </div>
         <div className="flex justify-center my-4">
