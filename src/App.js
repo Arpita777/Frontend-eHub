@@ -2,30 +2,30 @@ import { useEffect, useState } from "react";
 import AllRoutes from "./routes/AllRoutes";
 import { Header, Footer, AppLoader } from "./components";
 import { useBackendWarmup } from "./hooks/useBackendWarmup";
-import { useImagesReady } from "./hooks/useImagesReady";
 
 function App() {
   const backendReady = useBackendWarmup();
-  const imagesReady = useImagesReady();
-
   const [progress, setProgress] = useState(10);
-  const isAppReady = backendReady && imagesReady;
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((p) => (p < 90 ? p + 5 : p));
-    }, 300);
+    if (!backendReady) {
+      const timer = setInterval(() => {
+        setProgress((p) => (p < 90 ? p + 5 : p));
+      }, 300);
 
-    return () => clearInterval(timer);
-  }, []);
+      return () => clearInterval(timer);
+    }
+  }, [backendReady]);
 
   useEffect(() => {
-    if (isAppReady) setProgress(100);
-  }, [isAppReady]);
+    if (backendReady) {
+      setProgress(100);
+    }
+  }, [backendReady]);
 
   return (
     <div className="App dark:bg-darkbg relative">
-      {!isAppReady && (
+      {!backendReady && (
         <AppLoader
           progress={progress}
           backendReady={backendReady}

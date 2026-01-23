@@ -5,6 +5,7 @@ import { useCart } from "../context";
 import { Rating } from "../components";
 import { getProduct } from "../services";
 import { toast } from "react-toastify";
+import { ImageWithLoader } from "../components";
 
 export const ProductDetail = () => {
   const [product, setProduct] = useState({});
@@ -48,13 +49,13 @@ export const ProductDetail = () => {
         </p>
         <div className="flex flex-wrap justify-around">
           <div className="max-w-xl my-3 w-full">
-            <div className="w-full h-[420px] flex items-center justify-center overflow-hidden">
-               <img
+          <div className="w-full h-[420px] flex items-center justify-center overflow-hidden">
+              <ImageWithLoader
                 src={product.poster}
                 alt={product.name}
-                className="h-full w-full object-contain rounded"
-              /> 
-            </div>
+              />
+          </div>
+
           </div>
 
           <div className="max-w-xl my-3">
